@@ -2,12 +2,14 @@ import { Header } from "./components/header"
 import { Footer } from "./components/footer"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
+import { TestComponent } from "./components/test-component"
 import Link from "next/link"
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
+      <TestComponent />
       <div className="bg-[#1d70b8] text-white pb-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl py-8">
