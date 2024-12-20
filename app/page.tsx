@@ -13,7 +13,7 @@ export default function Page() {
       <div className="bg-[#1d70b8] text-white pb-12">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold max-w-4xl py-8">
-            IT Apprentice
+            IT Apprentice at The Quill C of E Trust.
           </h1>
           <div className="max-w-xl">
             <Input
