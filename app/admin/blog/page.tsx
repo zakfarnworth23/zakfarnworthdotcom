@@ -15,7 +15,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { BlogPost, getSortedPostsData, createPost, updatePost, deletePost } from "../../../lib/blog"
-import { formatDate } from "../../../lib/utils"
+import { formatDate } from "@/lib/utils"
 
 export default function AdminBlogPage() {
   const [posts, setPosts] = useState<BlogPost[]>([])

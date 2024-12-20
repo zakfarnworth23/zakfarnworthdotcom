@@ -1,8 +1,8 @@
 import { Header } from "../components/header"
 import { Footer } from "../components/footer"
 import { getSortedPostsData } from "../../lib/blog"
+import { formatDate } from "@/lib/utils"
 import Link from "next/link"
-import { formatDate } from "../../lib/utils"
 
 export default function BlogPage() {
   const posts = getSortedPostsData()
