@@ -1,9 +1,3 @@
-import fs from 'fs'
-import path from 'path'
-import matter from 'gray-matter'
-
-const postsDirectory = path.join(process.cwd(), 'posts')
-
 export type BlogPost = {
   id: string
   title: string
@@ -12,70 +6,75 @@ export type BlogPost = {
   excerpt: string
 }
 
-// Create posts directory if it doesn't exist
-if (!fs.existsSync(postsDirectory)) {
-  fs.mkdirSync(postsDirectory, { recursive: true })
-  
-  // Create a sample post
-  const samplePost = `---
-title: "Welcome to My Blog"
-date: "${new Date().toISOString().split('T')[0]}"
----
+// Static blog posts data
+const blogPosts: BlogPost[] = [
+  {
+    id: 'welcome-post',
+    title: 'Welcome to My Blog',
+    date: '2023-12-20',
+    content: `
+# Welcome to My Blog
 
-Welcome to my blog! This is my first post.
-`
-  fs.writeFileSync(path.join(postsDirectory, 'welcome.md'), samplePost)
-}
+I'm excited to share my journey as an IT Apprentice with you. This blog will cover various topics including:
+
+- Web Development
+- Cloud Computing
+- Digital Transformation
+- Technical Projects
+- Learning Experiences
+
+Stay tuned for more updates!
+    `,
+    excerpt: "Welcome to my blog! I'm excited to share my journey as an IT Apprentice with you..."
+  },
+  {
+    id: 'my-apprenticeship',
+    title: 'My IT Apprenticeship Experience',
+    date: '2023-12-19',
+    content: `
+# My IT Apprenticeship Experience
+
+Working as an IT Apprentice has been an incredible journey of learning and growth. Here are some key highlights:
+
+## Technical Skills
+
+- Full-stack web development
+- Cloud infrastructure
+- Agile methodologies
+- System administration
+
+## Projects
+
+I've had the opportunity to work on various exciting projects...
+    `,
+    excerpt: "Working as an IT Apprentice has been an incredible journey of learning and growth..."
+  }
+]
 
 export function getSortedPostsData(): BlogPost[] {
-  const fileNames = fs.readdirSync(postsDirectory)
-  const allPostsData = fileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, '')
-    const fullPath = path.join(postsDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
-    const matterResult = matter(fileContents)
-
-    return {
-      id,
-      title: matterResult.data.title,
-      date: matterResult.data.date,
-      content: matterResult.content,
-      excerpt: matterResult.content.slice(0, 200) + '...'
-    }
-  })
-
-  return allPostsData.sort((a, b) => (a.date < b.date ? 1 : -1))
+  return [...blogPosts].sort((a, b) => (a.date < b.date ? 1 : -1))
 }
 
-export async function getPostData(id: string): Promise<BlogPost> {
-  const fullPath = path.join(postsDirectory, `${id}.md`)
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
-  const matterResult = matter(fileContents)
-
-  return {
-    id,
-    title: matterResult.data.title,
-    date: matterResult.data.date,
-    content: matterResult.content,
-    excerpt: matterResult.content.slice(0, 200) + '...'
+export function getPostData(id: string): BlogPost {
+  const post = blogPosts.find(post => post.id === id)
+  if (!post) {
+    throw new Error(`Post not found: ${id}`)
   }
+  return post
 }
 
 export function createPost(title: string, content: string): void {
-  if (!fs.existsSync(postsDirectory)) {
-    fs.mkdirSync(postsDirectory, { recursive: true })
-  }
+  // In a real application, this would send data to an API
+  console.log('Creating post:', { title, content })
+}
 
-  const date = new Date().toISOString().split('T')[0]
-  const fileName = `${date}-${title.toLowerCase().replace(/\s+/g, '-')}.md`
-  const fullPath = path.join(postsDirectory, fileName)
-  const fileContent = `---
-title: "${title}"
-date: "${date}"
----
+export function updatePost(id: string, title: string, content: string): void {
+  // In a real application, this would send data to an API
+  console.log('Updating post:', { id, title, content })
+}
 
-${content}`
-
-  fs.writeFileSync(fullPath, fileContent)
+export function deletePost(id: string): void {
+  // In a real application, this would send data to an API
+  console.log('Deleting post:', { id })
 }
 
