@@ -12,11 +12,22 @@ export type BlogPost = {
   excerpt: string
 }
 
-export function getSortedPostsData(): BlogPost[] {
-  if (!fs.existsSync(postsDirectory)) {
-    fs.mkdirSync(postsDirectory, { recursive: true })
-  }
+// Create posts directory if it doesn't exist
+if (!fs.existsSync(postsDirectory)) {
+  fs.mkdirSync(postsDirectory, { recursive: true })
+  
+  // Create a sample post
+  const samplePost = `---
+title: "Welcome to My Blog"
+date: "${new Date().toISOString().split('T')[0]}"
+---
 
+Welcome to my blog! This is my first post.
+`
+  fs.writeFileSync(path.join(postsDirectory, 'welcome.md'), samplePost)
+}
+
+export function getSortedPostsData(): BlogPost[] {
   const fileNames = fs.readdirSync(postsDirectory)
   const allPostsData = fileNames.map((fileName) => {
     const id = fileName.replace(/\.md$/, '')
@@ -66,22 +77,5 @@ date: "${date}"
 ${content}`
 
   fs.writeFileSync(fullPath, fileContent)
-}
-
-export function updatePost(id: string, title: string, content: string): void {
-  const fullPath = path.join(postsDirectory, `${id}.md`)
-  const fileContent = `---
-title: "${title}"
-date: "${id.split('-').slice(0, 3).join('-')}"
----
-
-${content}`
-
-  fs.writeFileSync(fullPath, fileContent)
-}
-
-export function deletePost(id: string): void {
-  const fullPath = path.join(postsDirectory, `${id}.md`)
-  fs.unlinkSync(fullPath)
 }
 
