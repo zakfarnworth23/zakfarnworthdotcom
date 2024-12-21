@@ -40,7 +40,7 @@ export default function ProfilePage() {
               <h1 className="text-2xl font-bold">Zak Farnworth</h1>
               <p className="text-gray-600">IT Apprentice</p>
               <Button className="w-full" asChild>
-                <Link href="https://www.linkedin.com/in/zak-farnworth" target="_blank" rel="noopener noreferrer">
+                <Link href="https://www.linkedin.com/in/zakfarnworth" target="_blank" rel="noopener noreferrer">
                   <Linkedin className="w-4 h-4 mr-2" />
                   Connect with me on LinkedIn
                 </Link>
