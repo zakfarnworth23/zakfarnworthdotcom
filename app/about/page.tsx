@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import profilePic from './public/OfficialPortrait_2024.jpeg'
+import profilePic from '@/public/OfficialPortrait_2024.jpeg'
 import { Header } from "../components/header"
 import { Footer } from "../components/footer"
 
