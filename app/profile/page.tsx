@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import profilePic from '@/public/zak_london.jpeg'
 import { Header } from "../components/header"
 import { Footer } from "../components/footer"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -29,7 +30,7 @@ export default function ProfilePage() {
           <div className="space-y-6">
             <div className="relative aspect-square w-full overflow-hidden rounded-lg">
               <Image
-                src="/placeholder.svg"
+                src={profilePic}
                 alt="Zak Farnworth"
                 fill
                 className="object-cover"
@@ -87,7 +88,7 @@ export default function ProfilePage() {
                 <div className="max-w-md">
                   <div className="relative aspect-[3/4] rounded-lg overflow-hidden">
                     <Image
-                      src="/placeholder.svg"
+                      src={profilePic}
                       alt="Parliamentary portrait of Zak Farnworth"
                       fill
                       className="object-cover"
