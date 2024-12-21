@@ -11,7 +11,7 @@ export default function AboutPage() {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <div className="relative aspect-square w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg">
               <Image
-                src="/app/public/OfficialPortrait_2024.jpeg"
+                src="/public/OfficialPortrait_2024.jpeg"
                 alt="Zak Farnworth"
                 layout="fill"
                 objectFit="cover"
