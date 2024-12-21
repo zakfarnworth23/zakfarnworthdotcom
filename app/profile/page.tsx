@@ -64,9 +64,11 @@ export default function ProfilePage() {
                     <CardContent className="p-6">
                       <h3 className="font-bold mb-2">IT Apprentice</h3>
                       <p className="text-gray-600 mb-4">
-                        Working on digital transformation projects and developing technical solutions for parliamentary services.
+                      I oversee the implementation and design of our trust's digital infrastructure. My responsibilities include managing centralised print servers, Active Directory, Autopilot, Intune, MDT, and more. My expertise ensures the smooth operation of these critical systems, creating a robust and efficient digital environment that supports our MAT goals.
+In recognition of my contributions, I was honored with the BCS IT and Digital Award, coming in as Highly Commended. This accolade highlights my dedication to excellence and innovation in the field of IT.As a seasoned IT Apprentice, I oversee the implementation and design of our trust's digital infrastructure. My responsibilities include managing centralised print servers, Active Directory, Autopilot, Intune, MDT, and more. My expertise ensures the smooth operation of these critical systems, creating a robust and efficient digital environment that supports our MAT goals. In recognition of my contributions, I was honored with the BCS IT and Digital Award, coming in as Highly Commended. This accolade highlights my dedication to excellence and innovation in the field of IT.
+
                       </p>
-                      <div className="text-sm text-gray-500">2023 - Present</div>
+                      <div className="text-sm text-gray-500">September 2023 - Present</div>
                     </CardContent>
                   </Card>
                 </section>
