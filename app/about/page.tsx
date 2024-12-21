@@ -11,7 +11,11 @@ export default function AboutPage() {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <div className="relative aspect-square w-full max-w-sm mx-auto overflow-hidden rounded-lg shadow-lg">
               <Image
+<<<<<<< HEAD
                 src="/app/public/OfficialPortrait_ZF.jpg"
+=======
+                src="https://raw.githubusercontent.com/zakfarnworth23/zakfarnworthdotcom/2ce9fabb557c3879e30bb68bb09bbddc17325eef/app/public/OfficialPortrait_2024.jpeg"
+>>>>>>> 09c12b9f3301f9709a2d0e2ae589db218c34aaf4
                 alt="Zak Farnworth"
                 layout="fill"
                 objectFit="cover"
