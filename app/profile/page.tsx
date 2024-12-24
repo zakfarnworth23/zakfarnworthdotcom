@@ -37,7 +37,7 @@ export default function ProfilePage() {
               />
             </div>
             <div className="space-y-2">
-              <h1 className="text-2xl font-bold">Zak Farnworth</h1>
+              <h1 className="text-2xl font-bold">Lord Zak Farnworth</h1>
               <p className="text-gray-600">IT Apprentice</p>
               <Button className="w-full" asChild>
                 <Link href="https://www.linkedin.com/in/zakfarnworth" target="_blank" rel="noopener noreferrer">
