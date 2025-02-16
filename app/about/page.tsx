@@ -22,7 +22,7 @@ export default function AboutPage() {
           <div className="w-full md:w-2/3">
             <h1 className="text-4xl font-bold mb-8">About Me</h1>
             <div className="prose max-w-none">
-              <p class="text-sm truncate">Note - Became a Lord in December 2024.</p>
+              <p className="text-sm truncate">Note - Became a Lord in December 2024. Not a peerage but a lord in my own right per the British Constitution.</p>
               <p className="text-lg mb-6">
                 As an IT Apprentice, I am passionate about leveraging technology to solve complex problems and improve digital services. My journey in technology began with a deep curiosity about how systems work and has evolved into a commitment to excellence in IT solutions.
               </p>
