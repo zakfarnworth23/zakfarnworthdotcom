@@ -13,15 +13,8 @@ export default function Page() {
       <div className="bg-[#1d70b8] text-white pb-12">
         <div className="container mx-auto px-4">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold max-w-4xl py-8">
-            IT Apprentice at The Quill C of E Trust.
+            IT Technician at Albany Learning Trust.
           </h1>
-          <div className="max-w-xl">
-            <Input
-              type="search"
-              placeholder="Search portfolio"
-              className="bg-white text-black"
-            />
-          </div>
         </div>
       </div>
 
@@ -91,23 +84,6 @@ export default function Page() {
                 </Link>
               </div>
             ))}
-          </div>
-        </section>
-
-        <section>
-          <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-          <div className="max-w-2xl border p-6">
-            <p className="mb-4">
-              For parliamentary or technical enquiries, please use the appropriate channel below.
-            </p>
-            <div className="space-y-4">
-              <Button className="w-full bg-[#1d70b8] hover:bg-[#1d70b8]/90">
-                Parliamentary Contact
-              </Button>
-              <Button className="w-full bg-[#1d70b8] hover:bg-[#1d70b8]/90">
-                Technical Collaboration
-              </Button>
-            </div>
           </div>
         </section>
       </main>
