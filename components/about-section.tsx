@@ -8,8 +8,8 @@ export default function AboutSection() {
         <div className="md:col-span-1">
           <div className="bg-gray-100 p-2 rounded-md">
             <Image
-              src="/placeholder.svg?height=400&width=300"
-              alt="Official portrait of Lord Smith"
+              src="/zfarnworth.jpg"
+              alt="Official portrait of Lord Farnworth"
               width={300}
               height={400}
               className="w-full rounded-md"
