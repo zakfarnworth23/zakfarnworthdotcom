@@ -22,11 +22,11 @@ export default function RolesSection() {
       period: "2023 - 2025",
       organization: "The Quill C of E Trust",
       description:
-        "As IT Apprentice, I oversee the implementation and design of our trust's digital infrastructure. My responsibilities include managing centralised print servers, Active Directory, Autopilot, Intune, MDT, and more. My expertise ensures the smooth operation of these critical systems, creating a robust and efficient digital environment that supports our MAT goals.
+       "As IT Apprentice, I oversee the implementation and design of our trust's digital infrastructure. My responsibilities include managing centralised print servers, Active Directory, Autopilot, Intune, MDT, and more. My expertise ensures the smooth operation of these critical systems, creating a robust and efficient digital environment that supports our MAT goals.
 
 In recognition of my contributions, I was honored with the BCS IT and Digital Award, coming in as Highly Commended. This accolade highlights my dedication to excellence and innovation in the field of IT.",
       responsibilities: [
-        "Content to come..."
+        "Support the provision of end-user devices, computers and servers to support the MAT and Academies."
       ],
     },
     {
