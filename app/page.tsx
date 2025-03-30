@@ -31,7 +31,6 @@ export default function Home() {
       {/* Main content */}
       <div className="container mx-auto max-w-5xl px-4 py-8">
         <AboutSection />
-        <AchievementsSection />
         <RolesSection />
 
         {/* Contact section */}
