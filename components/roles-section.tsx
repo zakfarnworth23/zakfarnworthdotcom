@@ -8,68 +8,33 @@ export default function RolesSection() {
 
   const roles = [
     {
-      title: "Member, House of Lords",
-      period: "2015 - Present",
-      organization: "UK Parliament",
+      title: "ICT Technician",
+      period: "2025 - Present",
+      organization: "Albany Learning Trust",
       description:
-        "Participates in legislative scrutiny, debates on matters of public interest, and serves on select committees examining government policy and proposed legislation.",
+        "Content to come...",
       responsibilities: [
-        "Scrutinizing legislation and government activity",
-        "Contributing to debates on national and international issues",
-        "Serving on the Finance and Environment committees",
-        "Representing the UK in international parliamentary forums",
+        "Support the provision of end-user devices, computers and servers to support the MAT and Academies."
       ],
     },
     {
-      title: "Chair",
-      period: "2018 - Present",
-      organization: "National Infrastructure Commission",
+      title: "IT Apprentice",
+      period: "2023 - 2025",
+      organization: "The Quill C of E Trust",
       description:
-        "Leads the independent body providing expert advice to the government on major infrastructure challenges facing the UK.",
+        "Content to come...",
       responsibilities: [
-        "Setting strategic direction for the Commission",
-        "Overseeing development of the National Infrastructure Assessment",
-        "Engaging with stakeholders across industry, government and civil society",
-        "Appearing before parliamentary committees to give evidence",
+        "Content to come..."
       ],
     },
     {
-      title: "Non-Executive Director",
-      period: "2016 - Present",
-      organization: "Global Sustainable Development Corporation",
+      title: "IT Technician (Work Experience)",
+      period: "2022 - 2022",
+      organization: "Bolton St Catherine's Academy",
       description:
-        "Serves on the board of an international organization focused on promoting sustainable development practices worldwide.",
+        "Content to come...",
       responsibilities: [
-        "Providing strategic oversight and governance",
-        "Chairing the Ethics and Sustainability Committee",
-        "Advising on policy development and implementation",
-        "Representing the organization at high-level international forums",
-      ],
-    },
-    {
-      title: "Chancellor",
-      period: "2019 - Present",
-      organization: "University of Westminster",
-      description:
-        "Serves as the ceremonial head of the university, presiding over graduation ceremonies and acting as an ambassador for the institution.",
-      responsibilities: [
-        "Conferring degrees at graduation ceremonies",
-        "Representing the university at official functions",
-        "Advocating for higher education policy improvements",
-        "Supporting fundraising and development initiatives",
-      ],
-    },
-    {
-      title: "Former Chief Executive",
-      period: "2008 - 2015",
-      organization: "National Economic Development Agency",
-      description:
-        "Led the government agency responsible for driving economic growth and business development across the UK.",
-      responsibilities: [
-        "Overseeing a £2 billion annual budget",
-        "Managing a team of 1,200 staff across multiple locations",
-        "Implementing national economic development strategies",
-        "Reporting directly to the Secretary of State for Business",
+        "Content to come..."
       ],
     },
   ]
@@ -84,7 +49,7 @@ export default function RolesSection() {
 
   return (
     <section id="roles" className="py-8 mt-8">
-      <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">Roles & Responsibilities</h2>
+      <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">Experiences</h2>
       <div className="space-y-4">
         {roles.map((role, index) => (
           <div key={index} className="border border-gray-200 rounded-md overflow-hidden">
