@@ -9,8 +9,8 @@ import CookieBanner from "@/components/cookie-banner"
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 
 export const metadata: Metadata = {
-  title: "Member of the House of Lords | Official Portfolio",
-  description: "Official portfolio website for a Member of the House of Lords",
+  title: "Zak Farnworth | Official Portfolio",
+  description: "Official portfolio website for Zak Farnworth.",
     generator: 'v0.dev'
 }
 
