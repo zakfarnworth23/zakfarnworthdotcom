@@ -6,15 +6,13 @@ export default function AboutSection() {
       <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">About Lord Smith</h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="md:col-span-1">
-          <div className="bg-gray-100 p-2 rounded-md">
-            <Image
-              src="/zfarnworth.jpg"
-              alt="Official portrait of Lord Farnworth"
-              width={300}
-              height={400}
-              className="w-full rounded-md"
-            />
-          </div>
+          <Image
+            src="/zfarnworth.jpg"
+            alt="Official portrait of Lord Farnworth"
+            width={300}
+            height={400}
+            className="w-full rounded-md"
+          />
         </div>
         <div className="md:col-span-2">
           <p className="mb-4 text-lg">
