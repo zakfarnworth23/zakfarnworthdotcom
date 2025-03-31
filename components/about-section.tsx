@@ -22,7 +22,6 @@ export default function AboutSection() {
             I started my career at the age of 16 in September 2023 with The Quill C of E Trust. This experience was one which I thouroughly enjoyed and during my time there, worked with a number of key members of the MAT to improve technology and digital services across the acaddmies.
           </p>
           <p className="mb-4">
-          <p>
             I have many interests, to those who know me well, I am a big supporter of the Sounds of the 70s show with Johnnie Walker and now S070 with Bob Harris, with a private collection of archived shows. My other insterests include the collection of Art, Politics, and History.
           </p>
         </div>
