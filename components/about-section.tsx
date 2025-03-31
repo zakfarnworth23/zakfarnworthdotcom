@@ -16,26 +16,14 @@ export default function AboutSection() {
         </div>
         <div className="md:col-span-2">
           <p className="mb-4 text-lg">
-            Lord Smith was appointed to the House of Lords in January 2015, bringing extensive experience from both the
-            public and private sectors to Parliament.
+            Zak Farnworth was made Lord Farnworth on the 24th Day of December in 2024. Zak, was proud to have received this and the Highly Commended Apprentice of the Year award Honour in November.
           </p>
           <p className="mb-4">
-            With a distinguished career spanning over three decades, Lord Smith has served in various governmental and
-            non-governmental roles, focusing primarily on economic development, environmental sustainability, and public
-            service reform.
+            I started my career at the age of 16 in September 2023 with The Quill C of E Trust. This experience was one which I thouroughly enjoyed and during my time there, worked with a number of key members of the MAT to improve technology and digital services across the acaddmies.
           </p>
           <p className="mb-4">
-            Prior to joining the House of Lords, Lord Smith held several senior positions including Chief Executive of a
-            major public body and Chair of an international charitable foundation. His expertise in policy development
-            and implementation has been recognized through numerous awards and appointments.
-          </p>
-          <p className="mb-4">
-            Lord Smith holds a Master's degree in Public Administration from the London School of Economics and a
-            Bachelor's degree in Politics, Philosophy and Economics from the University of Oxford.
-          </p>
           <p>
-            As a member of the House of Lords, Lord Smith contributes to debates, scrutinizes legislation, and serves on
-            select committees, bringing a wealth of practical experience to the legislative process.
+            I have many interests, to those who know me well, I am a big supporter of the Sounds of the 70s show with Johnnie Walker and now S070 with Bob Harris, with a private collection of archived shows. My other insterests include the collection of Art, Politics, and History.
           </p>
         </div>
       </div>
