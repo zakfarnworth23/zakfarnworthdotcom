@@ -29,7 +29,7 @@ export default function Header() {
               Home
             </Link>
             <Link
-              href="#about"
+              href="/about"
               className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
             >
               About
