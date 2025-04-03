@@ -2,7 +2,7 @@ import type React from "react"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "About | Zak Farnworth",
+  title: "About | Member of the House of Lords",
   description: "About page with professional background and work experience",
 }
 
