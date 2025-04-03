@@ -1,63 +1,77 @@
-import Link from "next/link"
+import Image from "next/image"
+import WorkExperience from "@/components/work-experience"
+import GelCardGrid from "@/components/gel-card-grid"
+import { FileText, Download, ExternalLink } from "lucide-react"
 
-export default function CookiePolicyPage() {
+export default function AboutPage() {
+  // Sample resources for the GEL cards
+  const resources = [
+    {
+      title: "Curriculum Vitae",
+      description: "Download my full CV in PDF format",
+      icon: <FileText className="h-6 w-6" />,
+      link: "/files/cv.pdf",
+      type: "download",
+    },
+    {
+      title: "Portfolio",
+      description: "View my complete portfolio of projects",
+      icon: <ExternalLink className="h-6 w-6" />,
+      link: "/portfolio",
+      type: "internal",
+    },
+    {
+      title: "Certifications",
+      description: "Download my professional certifications",
+      icon: <Download className="h-6 w-6" />,
+      link: "/files/certifications.pdf",
+      type: "download",
+    },
+  ]
+
   return (
     <div className="container mx-auto max-w-5xl px-4 py-8">
-      <h1 className="text-3xl font-bold mb-6">About Zak Farnworth</h1>
+      <h1 className="text-3xl font-bold mb-6 border-b-2 border-gray-200 pb-2">About</h1>
 
-      <p className="mb-4">
-        This website uses cookies to improve your experience while you navigate through the website. Out of these, the
-        cookies that are categorized as necessary are stored on your browser as they are essential for the working of
-        basic functionalities of the website.
-      </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">What are cookies?</h2>
-      <p className="mb-4">
-        Cookies are small text files that are stored on your device when you visit a website. They are widely used in
-        order to make websites work more efficiently, as well as to provide information to the owners of the site.
-      </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">How we use cookies</h2>
-      <p className="mb-4">We use different types of cookies for different reasons:</p>
-
-      <h3 className="text-xl font-bold mt-6 mb-3">Essential cookies</h3>
-      <p className="mb-4">
-        These cookies are necessary for the website to function properly. They enable basic functions like page
-        navigation and access to secure areas of the website. The website cannot function properly without these
-        cookies.
-      </p>
-
-      <h3 className="text-xl font-bold mt-6 mb-3">Analytics cookies</h3>
-      <p className="mb-4">
-        These cookies collect information about how you use our website, which pages you visited and which links you
-        clicked on. All of the data is anonymized and cannot be used to identify you.
-      </p>
-
-      <h3 className="text-xl font-bold mt-6 mb-3">Preference cookies</h3>
-      <p className="mb-4">
-        These cookies enable the website to remember information that changes the way the website behaves or looks, like
-        your preferred language or the region that you are in.
-      </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">Managing cookies</h2>
-      <p className="mb-4">
-        You can set your browser to refuse all or some browser cookies, or to alert you when websites set or access
-        cookies. If you disable or refuse cookies, please note that some parts of this website may become inaccessible
-        or not function properly.
-      </p>
-
-      <h2 className="text-2xl font-bold mt-8 mb-4">How to control cookies</h2>
-      <p className="mb-4">
-        You can control and/or delete cookies as you wish. You can delete all cookies that are already on your computer
-        and you can set most browsers to prevent them from being placed. If you do this, however, you may have to
-        manually adjust some preferences every time you visit a site and some services and functionalities may not work.
-      </p>
-
-      <div className="mt-8 pt-6 border-t border-gray-200">
-        <Link href="/" className="text-govuk-blue hover:underline">
-          Return to homepage
-        </Link>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="md:col-span-1">
+          <Image
+            src="/placeholder.svg?height=400&width=300"
+            alt="Professional portrait"
+            width={300}
+            height={400}
+            className="w-full rounded-md"
+          />
+        </div>
+        <div className="md:col-span-2">
+          <h2 className="text-2xl font-bold mb-4">Professional Background</h2>
+          <p className="mb-4 text-lg">
+            With over a decade of experience in the technology sector, I have developed expertise in IT infrastructure,
+            educational technology, and digital transformation.
+          </p>
+          <p className="mb-4">
+            Currently serving as an ICT Technician at Albany Learning Trust, I am responsible for maintaining and
+            improving the technology infrastructure that supports educational delivery across multiple schools.
+          </p>
+          <p className="mb-4">
+            My approach combines technical knowledge with a deep understanding of how technology can enhance learning
+            outcomes. I believe in creating sustainable, user-friendly systems that empower educators and students
+            alike.
+          </p>
+          <p>
+            Throughout my career, I have consistently demonstrated a commitment to innovation, problem-solving, and
+            collaborative working. I am passionate about leveraging technology to create positive change in educational
+            environments.
+          </p>
+        </div>
       </div>
+
+      <h2 className="text-2xl font-bold mb-6 border-b-2 border-gray-200 pb-2">Work Experience</h2>
+      <WorkExperience />
+
+      <h2 className="text-2xl font-bold mt-12 mb-6 border-b-2 border-gray-200 pb-2">Resources</h2>
+      <GelCardGrid cards={resources} />
     </div>
   )
 }
+
