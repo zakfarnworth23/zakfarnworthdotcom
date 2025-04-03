@@ -4,9 +4,15 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
 import { useState } from "react"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const pathname = usePathname()
+
+  const isActive = (path: string) => {
+    return pathname === path
+  }
 
   return (
     <header className="govuk-blue text-white">
@@ -24,30 +30,34 @@ export default function Header() {
           <div className="hidden md:flex items-center space-x-8">
             <Link
               href="/"
-              className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
+              className={`hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
+                isActive("/") ? "underline" : ""
+              }`}
             >
               Home
             </Link>
             <Link
               href="/about"
-              className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
+              className={`hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
+                isActive("/about") ? "underline" : ""
+              }`}
             >
               About
             </Link>
             <Link
-              href="#achievements"
+              href="/#achievements"
               className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
             >
               Achievements
             </Link>
             <Link
-              href="#roles"
+              href="/#roles"
               className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
             >
               Roles
             </Link>
             <Link
-              href="#contact"
+              href="/#contact"
               className="hover:underline focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
             >
               Contact
@@ -69,34 +79,38 @@ export default function Header() {
             <nav className="flex flex-col space-y-4">
               <Link
                 href="/"
-                className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
+                className={`py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
+                  isActive("/") ? "bg-[#5694ca]" : ""
+                }`}
                 onClick={() => setMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
-                href="#about"
-                className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
+                href="/about"
+                className={`py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none ${
+                  isActive("/about") ? "bg-[#5694ca]" : ""
+                }`}
                 onClick={() => setMenuOpen(false)}
               >
                 About
               </Link>
               <Link
-                href="#achievements"
+                href="/#achievements"
                 className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
                 onClick={() => setMenuOpen(false)}
               >
                 Achievements
               </Link>
               <Link
-                href="#roles"
+                href="/#roles"
                 className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
                 onClick={() => setMenuOpen(false)}
               >
                 Roles
               </Link>
               <Link
-                href="#contact"
+                href="/#contact"
                 className="py-2 hover:bg-[#5694ca] px-2 rounded focus:outline-none focus:text-black focus:bg-yellow-400 focus:box-shadow-none"
                 onClick={() => setMenuOpen(false)}
               >
