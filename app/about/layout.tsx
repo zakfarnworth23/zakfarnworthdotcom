@@ -12,16 +12,20 @@ export default function AboutLayout({
   children: React.ReactNode
 }>) {
   return (
-    <div className="bg-white">
-      {/* Hero section */}
-      <div className="govuk-blue text-white py-8 px-4">
-        <div className="container mx-auto max-w-5xl">
-          <h1 className="text-3xl md:text-4xl font-bold">About</h1>
-          <p className="text-lg md:text-xl mt-2">Professional background and experience</p>
-        </div>
+  <div className="bg-white">
+    {/* Hero section */}
+    <div className="govuk-blue text-white py-8 px-4">
+      <div className="container mx-auto max-w-5xl">
+        <h1 className="text-3xl md:text-4xl font-bold">About</h1>
+        <p className="text-lg md:text-xl mt-2">Professional background and experience</p>
       </div>
+    </div>
+
+    {/* Content section */}
+    <div className="container mx-auto max-w-5xl px-4 py-8">
       {children}
     </div>
-  )
+  </div>
+)
 }
 
