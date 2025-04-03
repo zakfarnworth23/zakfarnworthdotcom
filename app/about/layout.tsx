@@ -21,8 +21,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} font-sans min-h-screen flex flex-col`}>
-        <CookieBanner />
-        <Header />
+      <h1 className="text-3xl md:text-4xl font-bold">About</h1>
+         <p className="text-lg md:text-xl mt-2">Professional background and experience</p>
         <main className="flex-grow">{children}</main>
         <Footer />
       </body>
