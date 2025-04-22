@@ -4,7 +4,6 @@ import GelCardGrid from "@/components/gel-card-grid"
 import { FileText, Download, ExternalLink } from "lucide-react"
 
 export default function AboutPage() {
-  // Sample resources for the GEL cards
   const resources = [
     {
       title: "Curriculum Vitae",
@@ -30,9 +29,10 @@ export default function AboutPage() {
   ]
 
   return (
-<div className="container mx-auto max-w-5xl px-4 pt-32 pb-8">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        <div className="md:col-span-2">
+    <div className="container mx-auto max-w-5xl px-4 pt-32 pb-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-start">
+        {/* Column 1: Image */}
+        <div className="md:col-span-1">
           <Image
             src="/placeholder.svg?height=400&width=300"
             alt="Professional portrait"
@@ -41,6 +41,8 @@ export default function AboutPage() {
             className="w-full rounded-md"
           />
         </div>
+
+        {/* Columns 2–3: Text */}
         <div className="md:col-span-2">
           <h2 className="text-2xl font-bold mb-4">Professional Background</h2>
           <p className="mb-4 text-lg">
@@ -72,4 +74,3 @@ export default function AboutPage() {
     </div>
   )
 }
-
