@@ -13,12 +13,6 @@ export default function Home() {
           <p className="text-xl md:text-2xl mb-8">ICT Technician @ Albany Learning Trust</p>
           <div className="flex flex-row gap-4 mt-8">
             <Link
-              href="#contact"
-              className="bg-white text-govuk-blue font-bold py-3 px-6 inline-block text-center hover:bg-gray-100 transition-colors focus:outline-none focus:ring-4 focus:ring-yellow-400"
-            >
-              Contact Office
-            </Link>
-            <Link
               href="#roles"
               className="govuk-blue-dark text-white font-bold py-3 px-6 inline-block text-center border-2 border-white hover:bg-[#1d70b8] transition-colors focus:outline-none focus:ring-4 focus:ring-yellow-400"
             >
