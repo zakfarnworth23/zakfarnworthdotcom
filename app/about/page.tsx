@@ -30,7 +30,7 @@ export default function AboutPage() {
   ]
 
   return (
-<div className="container mx-auto max-w-5xl px-4 py-8 mt-24 md:mt-32">
+<div className="container mx-auto max-w-5xl px-4 pt-32 pb-8">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <div className="md:col-span-2">
           <Image
