@@ -32,7 +32,7 @@ export default function AboutPage() {
   return (
 <div className="container mx-auto max-w-5xl px-4 py-8 mt-40">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-        <div className="md:col-span-1">
+        <div className="md:col-span-2">
           <Image
             src="/placeholder.svg?height=400&width=300"
             alt="Professional portrait"
